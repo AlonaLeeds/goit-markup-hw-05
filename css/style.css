@@ -579,8 +579,8 @@ footer {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #2e2f42;
 }
-.modal-button-close-svg:hover,  /*changed */
-.modal-button-close-svg:focus {
+.modal-button-close:hover, 
+.modal-button-close:focus {
   background-color: #404bbf;
   border: none;
 }
