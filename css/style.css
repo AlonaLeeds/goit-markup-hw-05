@@ -522,7 +522,7 @@ footer {
 }
 
 /* modal */
-.modal.is-open {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -535,7 +535,7 @@ footer {
   visibility: hidden;
 }
 
-.modal {
+.backdrop.is-open {
   opacity: 1;
   visibility: visible;
 }
@@ -558,28 +558,33 @@ footer {
 }
 
 .modal-button-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   position: absolute;
   top: 24px;
   right: 24px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #e7e9fc;
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
 }
 
 .modal-button-close-svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: #2e2f42;
+  fill: currentColor;
 }
-.modal-button-close:hover, 
+.modal-button-close:hover,
 .modal-button-close:focus {
   background-color: #404bbf;
   border: none;
@@ -600,11 +605,11 @@ footer {
   margin-top: 0;
 }
 
-.modal-div {
+.modal-form-div {
   margin-bottom: 8px;
 }
 
-.modal-div-l,
+.modal-form-div-l,
 .modal-form-div-phone,
 .modal-form-div-email {
   font-size: 12px;
@@ -620,13 +625,16 @@ footer {
 }
 
 .input-pers {
+  font-size: 12px;
   width: 100%;
   height: 40px;
+
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
-  padding-left: 38px;
   outline: transparent;
+  padding-left: 38px;
+
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -640,7 +648,8 @@ footer {
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: #2e2f42;
+  color: #2e2f42; /*chanched*/
+  fill: currentColor;
 }
 
 .input-pers:focus + .modal-form-div-svg {
@@ -672,6 +681,7 @@ footer {
 }
 
 .modal-form-checkbox {
+  position: relative;
   margin-bottom: 24px;
 }
 
@@ -680,7 +690,7 @@ footer {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  display: flex;
+  display: block; /*chached*/
 }
 
 .label-checkbox-span {
@@ -691,6 +701,7 @@ footer {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
