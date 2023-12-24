@@ -455,7 +455,7 @@ footer {
   align-items: center;
 }
 .footer .social-link {
-  transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #ffffff;
   border-color: rgba(255, 255, 255, 0.1);
 }
@@ -466,65 +466,60 @@ footer {
 .social-icon {
   fill: #f4f4fd;
 }
- 
+
 /* homework 5 */
 
-.footer-modal-group
- {
-    margin-left: auto;
+.footer-modal-group {
+  margin-left: auto;
 }
-.footer-caption.modal-group{
+.footer-caption.modal-group {
   margin-left: 80px;
 }
 .order-modal {
-    display: flex; 
-    gap: 24px;
+  display: flex;
+  gap: 24px;
 }
 
 .order-modal-input {
-    width: 264px;
-    height: 40px;
-    border: 1px solid #ffffff;
-    background-color: transparent;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
-    padding-left: 16px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    color: #ffffff;
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
 }
-
 
 .order-modal-btn {
-    min-width: 165px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    cursor: pointer;
-    background-color: #4D5AE5;
-    border: none; 
-    border-radius: 4px;
-    
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
 }
-.order-modal-label{
+.order-modal-label {
   display: flex;
   margin-left: 80px;
 }
 
 .order-modal-btn-svg {
-    margin-left: 16px;
-    fill: #ffffff;
+  margin-left: 16px;
+  fill: #ffffff;
 }
-
-
 
 /* modal */
 .modal.is-open {
@@ -551,17 +546,16 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  max-width: 408px; 
+  max-width: 408px;
   width: calc(100% - 32px);
   min-height: 584px;
-  background: #fcfcfc; 
+  background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2); 
-  border-radius: 4px; 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px 24px;
 }
-
 
 .modal-button-close {
   position: absolute;
@@ -571,22 +565,20 @@ footer {
   height: 24px;
   border-radius: 50%;
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   background-color: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1); 
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button-close:hover {
+.modal-button-close:hover,
+.modal-button-close:focus,
+.modal-button-close:active {
   background-color: #404bbf;
-  border: none;
-}
-
-.modal-button-close:focus {
   border: none;
 }
 
@@ -661,8 +653,6 @@ footer {
   fill: #4d5ae5;
 }
 
-
-
 .modal-form-div-comment {
   margin-bottom: 16px;
 }
@@ -711,7 +701,7 @@ footer {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  margin-right: 8px; 
+  margin-right: 8px;
   flex-shrink: 0;
 }
 
@@ -744,5 +734,5 @@ footer {
   border: none;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin: 0 auto; 
+  margin: 0 auto;
 }
