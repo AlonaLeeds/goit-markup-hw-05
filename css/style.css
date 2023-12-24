@@ -580,6 +580,7 @@ footer {
 .modal-button-close:active {
   background-color: #404bbf;
   border: none;
+  fill: #ffffff;
 }
 
 .modal-button-close-svg {
@@ -587,13 +588,13 @@ footer {
   fill: #2e2f42;
 }
 
-.modal-button-close:hover .modal-button-close-svg {
+/* .modal-button-close:hover .modal-button-close-svg {
   fill: #ffffff;
 }
 
 .modal-button-close:focus .modal-button-close-svg {
   fill: #ffffff;
-}
+} */
 
 .modal-p {
   font-weight: 500;
